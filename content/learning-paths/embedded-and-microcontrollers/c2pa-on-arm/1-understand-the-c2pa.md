@@ -1,5 +1,5 @@
 ---
-title: Understand the C2PA result
+title: Understand the C2PA Content Credentials
 description: Learn how C2PA Content Credentials record provenance and what successful validation does and does not establish.
 weight: 2
 
@@ -132,13 +132,3 @@ The workflow also does not demonstrate hardware-backed key custody or platform a
 TODO: Recap the problem, the role of Content Credentials, and the distinction between validity,
 credential trust, and truth. Then direct the learner to confirm that C2PA Tool is available and
 prepare the example files.
-
-<!--
-Authoring evidence still needed:
-
-- Confirm the complete workflow with the current stable C2PA Tool release.
-- Record minimum storage, network, and completion-time requirements.
-- Resolve the public sample asset provenance, license, and SHA-256 digest.
-- Capture positive and negative fixtures with short, sanitized output.
-- Recheck definitions and validation semantics against the current C2PA specification.
--->

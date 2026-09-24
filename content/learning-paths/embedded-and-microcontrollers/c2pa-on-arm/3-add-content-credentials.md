@@ -6,19 +6,32 @@ weight: 4
 layout: learningpathall
 ---
 
-{{% notice Note %}}
-This workflow was demonstrated with `c2patool 0.27.21` on Apple silicon macOS. The candidate sample
-image also requires a publication-license decision.
-{{% /notice %}}
-
 ## Development credential limitation
 
-The lab credential demonstrates signing mechanics. This example uses the private key and signing
+The Learning Path demonstrates signing mechanics. It uses the private key and signing
 certificate built into C2PA Tool. These test credentials do not establish a production identity or
 trust by public validators. A validator that does not explicitly trust the certificate reports it as
 untrusted.
 
 Do not use the built-in private key or certificate to sign production content.
+
+## Create the manifest definition
+
+In your text editor, create a plain-text file named `manifest.json` in your `c2pa-demo` working directory with
+these contents:
+
+```json
+{
+  "assertions": []
+}
+```
+
+This file supplies the manifest definition used by `--manifest manifest.json` in the signing command below.
+The empty `assertions` array means you are not supplying any custom assertions. C2PA Tool still
+builds the signed manifest; the `--create digitalCapture` option adds the creation
+action. Keeping the definition minimal lets you focus on signing and validation.
+
+Save the file as `manifest.json`, not `manifest.json.txt`.
 
 ## Add the Content Credential
 
@@ -72,10 +85,5 @@ c2pa-sample-image.jpg
 c2pa-sample-signed.jpg
 ```
 
-## Remaining validation work
-
-- `[EXPERIMENT]` Signing and manifest-presence checks succeeded with `c2patool 0.27.21` on Apple
-  silicon macOS.
-- `[UNVALIDATED]` Resolve the sample image license and confirm that `digitalCapture` describes it.
 
 Next, inspect the generated manifest and separate signature and asset-binding validation from trust.

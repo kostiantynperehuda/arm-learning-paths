@@ -53,11 +53,3 @@ the recorded workflow.
 
 TODO: Reiterate that the result does not establish truthfulness, production signer identity, universal
 tamper detection, hardware-backed key protection, or remote platform attestation.
-
-## Evidence needed
-
-- `[EXPERIMENT]` Reviewed deterministic tamper helper and exact invocation.
-- `[EXPERIMENT]` Proof that the manifest remains present after modification.
-- `[EXPERIMENT]` Negative fixture and validation transcript showing the intended failure.
-- `[EXPERIMENT]` Recovery and revalidation transcript for the pristine signed asset.
-- `[RESEARCH]` Specification support for the final security interpretation.

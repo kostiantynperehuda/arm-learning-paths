@@ -117,9 +117,5 @@ Read that field with the individual status codes. Here, `Valid` accompanies succ
 data-hash checks despite `signingCredential.untrusted`; it does not mean the signer is trusted. The
 result also does not prove that the image is true or that its assertion is factually correct.
 
-## Evidence needed
-
-- `[RESEARCH]` Status-code meanings checked against the C2PA technical specification.
-- `[EXPERIMENT]` Positive transcript reproduced with `c2patool 0.27.21` on Apple silicon macOS.
 
 Next, change protected asset data deliberately and observe the validation failure.
