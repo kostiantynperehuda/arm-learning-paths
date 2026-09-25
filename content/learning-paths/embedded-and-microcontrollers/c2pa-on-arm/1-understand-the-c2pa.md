@@ -93,9 +93,8 @@ Trust applies to the signing credential and the signer identity associated with 
 that every assertion is factually true. The consumer uses the signer identity, the assertions, and
 other trust signals to decide whether to rely on the provenance record.
 
+<!-- DRAFT PLACEHOLDER: Review whether this duplicates the Learning Path overview.
 ## Preview the result
-
-<!-- DRAFT PLACEHOLDER: Review whether this duplicates the Learning Path overview. -->
 
 TODO: Preview the four observable results without introducing commands:
 
@@ -107,12 +106,11 @@ TODO: Preview the four observable results without introducing commands:
 
 Use the final tested fixtures and short output excerpts from the hands-on pages. Do not imply that the
 untrusted credential caused signing to fail, or that the failed hard binding proves every possible
-change to an asset can be detected.
+change to an asset can be detected. -->
+
+<!-- DRAFT PLACEHOLDER: Consider moving this framework to the inspection and validation page.
 
 ## Read validation results in layers
-
-<!-- DRAFT PLACEHOLDER: Consider moving this framework to the inspection and validation page. -->
-
 TODO: Give the learner a four-question framework for reading the validation report:
 
 1. **Manifest validity:** Is the manifest well-formed, unchanged, and signed with a credential that
@@ -125,7 +123,7 @@ TODO: Give the learner a four-question framework for reading the validation repo
 
 Explain that these answers are independent. A valid signature and matching asset binding do not make
 the signing credential trusted. A trusted credential does not make every assertion factually true.
-The workflow also does not demonstrate hardware-backed key custody or platform attestation.
+The workflow also does not demonstrate hardware-backed key custody or platform attestation. -->
 
 ## What you've learned and what's next
 

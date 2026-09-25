@@ -29,15 +29,21 @@ Find `active_manifest`, locate the same label under `manifests`, and inspect
 ```output
 "claim_generator_info": [
   {
-    "name": "c2patool",
-    "version": "0.27.21",
+    "name": "Arm Learning Path C2PA Example",
+    "version": "1.0.0",
+    "com.arm.learning_path.tool": {
+      "name": "c2patool",
+      "version": "0.27.21"
+    },
     "org.contentauth.c2pa_rs": "0.90.21"
   }
 ]
 ```
 
-Manifest labels, instance IDs, and UUIDs differ between runs. Reconcile the versions with the final
-supported release before publication.
+The name and `1.0.0` example version match the values you supplied in `manifest.json`. The custom
+`com.arm.learning_path.tool` field records the separate tool name and version you supplied. C2PA Tool adds
+`org.contentauth.c2pa_rs` to identify its underlying library; `0.90.21` is the library version in the
+tested tool. Manifest labels, instance IDs, and UUIDs differ between runs.
 
 ## Inspect the assertions
 
